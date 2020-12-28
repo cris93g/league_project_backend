@@ -12,7 +12,6 @@ let getUserAccount = async (req,res)=>{
                 }
         })
         let userId = getAccount.data.id;
-        console.log(userId)
         let getProfileInfo = await axios.get(`${API_URL}league/v4/entries/by-summoner/${userId}`,{
             headers: {
                 'Accept-Charset': 'application/x-www-form-urlencoded; charset=UTF-8',
